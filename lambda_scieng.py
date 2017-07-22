@@ -1,6 +1,6 @@
 # Calculates scientific and engineering formats from input value.
 
-import decimal, math, os, sys
+import decimal, math
 
 def lambda_handler(event, context):
   sci = None
@@ -21,9 +21,6 @@ def lambda_handler(event, context):
     sci = 0.0
     eng = 0.0
     forward_exp = 1
-    # print('input value is zero: %f' % (input_val))
-    # print('goodbye!')
-    # sys.exit(os.EX_OK)
 
   if input_val < 0.0:
     sign = -1
