@@ -1,6 +1,5 @@
 # Calculates scientific and engineering formats from input value.
 
-from __future__ import division
 import decimal, math, os, sys
 
 def lambda_handler(event, context):
