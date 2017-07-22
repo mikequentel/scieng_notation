@@ -41,4 +41,4 @@ def lambda_handler(event, context):
     backward_exp = -1 * forward_exp
     eng = sign * (absolute_input_val * math.pow(10, backward_exp))
 
-  return {"statusCode": 200,"headers":{"Content-Type":"application/json"},"body":[sci, eng]}
+  return {"statusCode": 200,"headers":{"Content-Type":"application/json"},"body":[sci, eng, forward_exp]}
