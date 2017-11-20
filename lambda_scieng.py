@@ -41,4 +41,4 @@ def lambda_handler(event, context):
 
   eng_forward_exp = forward_exp
 
-  return {"statusCode": 200,"headers":{"Content-Type":"application/json"},"body":[sci, eng, sci_forward_exp, eng_forward_exp]}
+  return {"statusCode": 200,"headers":{"Access-Control-Allow-Origin":"*","Content-Type":"application/json"},"body":[sci, eng, sci_forward_exp, eng_forward_exp]}
